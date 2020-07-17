@@ -28,7 +28,7 @@
           <p>{{page.humandate}}</p>
           <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
           <p>
-          <strong>Instructors:</strong>
+          <strong>Instructors are:</strong>
           {% if page.instructor %}
           {{page.instructor | join: ', ' %}}
           {% else %}
@@ -37,7 +37,7 @@
           </p>
           {% if page.helper %}
           <p>
-          <strong>Helpers:</strong>
+          <strong>Helpers are:</strong>
           {{page.helper | join: ', ' %}}
           </p>
           {% endif %}
