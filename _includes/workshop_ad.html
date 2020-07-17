@@ -18,11 +18,11 @@
       <h2>{{site.title}}<img align=right height=148 src=https://qcif-training.github.io/common_reference/img/QUT_QCIF_logo.png></h2>
       {% endunless %}
       <h2>{{page.venue}}</h2>
+      {% if online == "true_public" %}
+      <p>Online (<a href="{{page.address}}">link</a>)</p>
+      {% elsif online == "true_private" %}
       <div class="row">
         <div class="col-md-10">
-          {% if online == "true_public" %}
-          <p>Online (<a href="{{page.address}}">link</a>)</p>
-          {% elsif online == "true_private" %}
           <p>Online</p>
           {% endif %}
           <p>{{page.humandate}}</p>
