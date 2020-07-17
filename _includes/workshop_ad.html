@@ -21,14 +21,14 @@
       {% if online == "true_public" %}
       <p>Online (<a href="{{page.address}}">link</a>)</p>
       {% elsif online == "true_private" %}
+      <p>Online</p>
+      {% endif %}
+      <p>{{page.humandate}}</p>
+      <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
+      <p>
       <div class="row">
         <div class="col-md-10">
-          <p>Online</p>
-          {% endif %}
-          <p>{{page.humandate}}</p>
-          <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
-          <p>
-          <strong>Instructors are:</strong>
+          <strong>Instructors:</strong>
           {% if page.instructor %}
           {{page.instructor | join: ', ' %}}
           {% else %}
@@ -37,7 +37,7 @@
           </p>
           {% if page.helper %}
           <p>
-          <strong>Helpers are:</strong>
+          <strong>Helpers:</strong>
           {{page.helper | join: ', ' %}}
           </p>
           {% endif %}
