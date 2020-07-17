@@ -19,7 +19,7 @@
       {% endunless %}
       <h2>{{page.venue}}</h2>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10">
           {% if online == "true_public" %}
           <p>Online (<a href="{{page.address}}">link</a>)</p>
           {% elsif online == "true_private" %}
@@ -27,8 +27,6 @@
           {% endif %}
           <p>{{page.humandate}}</p>
           <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
-        </div>
-        <div class="col-md-6">
           <p>
           <strong>Instructors:</strong>
           {% if page.instructor %}
