@@ -62,6 +62,8 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endunless %}
 {% endif %}
 
+{% endcomment %}
+
 
 {% comment %}
 HUMANTIX
